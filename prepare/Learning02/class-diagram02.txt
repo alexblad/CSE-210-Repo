@@ -6,7 +6,7 @@ Attributes:
 * _endYear : int
 
 Behaviors:
-* _displayInfo() : void
+* DisplayInfo() : void
 
 
 Class: Resume
@@ -15,5 +15,4 @@ Attributes:
 * _jobs : List<Job>
 
 Behaviors: 
-_displayInfo() : void 
-
+DisplayInfo() : void 
