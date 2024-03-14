@@ -1,0 +1,16 @@
+##The Class diagrams for the journal program 
+##The program will have # classes in addition to the program class 
+
+Class: Journal 
+Attributes: 
+* _menuOptions : List<option>
+* _entries : List<Entry>
+
+Methods: 
+* DisplayOptions() : void 
+* NewEntry() :
+
+
+Class: Entry 
+
+Class: Prompt Generator 
