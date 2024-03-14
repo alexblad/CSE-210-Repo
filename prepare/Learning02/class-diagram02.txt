@@ -5,7 +5,7 @@ Attributes:
 * _startYear : int
 * _endYear : int
 
-Behaviors:
+Methodss:
 * DisplayInfo() : void
 
 
@@ -14,5 +14,5 @@ Attributes:
 * _name : string 
 * _jobs : List<Job>
 
-Behaviors: 
+Methods: 
 DisplayInfo() : void 

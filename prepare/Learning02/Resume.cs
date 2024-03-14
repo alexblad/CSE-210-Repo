@@ -2,13 +2,13 @@
 
 public class Resume
 {
-    //Creating the attributes of the class
+//Creating the attributes of the class
     public string _name; //First and last
     
     //Initialize the list when it is declared
     public List<Job> _jobs = new List<Job>();
 
-    //Create a method to display the details of the ._jobs
+//Create a method to display the details of the ._jobs
     public void DisplayInfo()
     {
         Console.WriteLine($"Name: {_name}");
