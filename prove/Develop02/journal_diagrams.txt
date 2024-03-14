@@ -8,9 +8,34 @@ Attributes:
 
 Methods: 
 * DisplayOptions() : void 
-* NewEntry() :
+    -displays menu options
+* NewEntry(newEntry : Entry) : void 
+    -create a new entry
+* DisplayEntries() : void 
+    -displays all the entries in the journal
+*SaveToFile(file : string) : void
+    -saves the file
+*LoadFromFile(file : string) : void
+    -loads file 
+* quit() : void 
+    -quits the journal
+
 
 
 Class: Entry 
+Attributes: 
+* _date : string (or datetime?)
+* _prompt : string 
+* _entryText : string 
+* _location : string
 
-Class: Prompt Generator 
+Methods: 
+* DisplayEntry() : void 
+* EntryResponse() : void
+
+Class: Prompt Generator
+Attributes: 
+* _prompts : List<string> 
+
+Methods: 
+* GetRandomPrompt() : string
