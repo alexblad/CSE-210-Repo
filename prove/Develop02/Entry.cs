@@ -4,10 +4,10 @@ using System;
 public class Entry
 {
 //Create the attributes of the class
-    public string _date;
-    public string _prompt;
-    public string _entryText;
-    public string _location;
+    public string _date = "";
+    public string _prompt = "";
+    public string _entryText = "";
+    public string _location = "";
     PromptGenerator _randprompt = new PromptGenerator();
 
 //Create the methods of the class
@@ -31,8 +31,16 @@ public class Entry
     //Method to Display the EntryResponse
     public void DisplayEntry()
     {
+        Console.WriteLine("---------------------------------------------------------");
         Console.WriteLine($"Entry from {_location} on {_date}");
         Console.WriteLine(_prompt);
         Console.WriteLine(_entryText);
+        Console.WriteLine();
+
     }
+
+    public override string ToString()
+    {
+    return $"{_date}|{_location}|{_prompt}|{_entryText}";
+    }   
 }

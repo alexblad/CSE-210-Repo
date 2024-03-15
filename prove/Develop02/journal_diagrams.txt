@@ -9,7 +9,7 @@ Attributes:
 Methods: 
 * DisplayOptions() : void 
     -displays menu options
-* NewEntry(newEntry : Entry) : void 
+* NewEntry() : void 
     -create a new entry
 * DisplayEntries() : void 
     -displays all the entries in the journal
