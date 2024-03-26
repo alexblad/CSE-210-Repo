@@ -1,0 +1,50 @@
+Class: Scripture
+Attributes:
+* _reference : Reference 
+* _words : List<Word>
+
+Methods:
+[Constructors]
+Scripture(Reference : Reference, text : string)
+
+[Other Methods]
+HideRandomWords(numberToHide : int) : void 
+GetDisplayText() : string 
+IsCompletelyHidden() : bool 
+
+
+
+
+Class: Reference
+Attributes: 
+* _book : string 
+* _chapter : int 
+* _verse : int 
+* _endVerse : int 
+
+Methods:
+[Constructors]
+Reference(book : string, chapter : int, verse : int)
+Reference(book : string, chapter : int, startVerse : int, endVerse : int)
+
+[Other Methods]
+GetDisplayText() : string
+
+
+
+
+Class: Word
+Attributes:
+* _text : string 
+* _hidden : bool 
+
+Methods:
+[Constructor]
+Word(text: string)
+
+[Other Methods]
+Hide() : void 
+Show() : void 
+isHidden() : bool 
+GetDisplayText() : string
+

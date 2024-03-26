@@ -4,6 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop03 World!");
+        Word w1 = new Word("bigboy");
+        w1.GetDisplayText();
+        Console.WriteLine(w1.GetDisplayText());
+
+        w1.Hide();
+        Console.WriteLine(w1.GetDisplayText());
+
+        w1.Show();
+        Console.WriteLine(w1.GetDisplayText());
     }
 }
