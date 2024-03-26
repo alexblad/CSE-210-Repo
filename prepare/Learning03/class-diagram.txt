@@ -1,0 +1,20 @@
+Class: Fraction 
+Attributes:
+* _top : int 
+* _bottom : int 
+
+Methods: 
+[Constructors]
+* Fraction()
+* Fraction (wholeNumber :int)
+* Fraction (top : int bottom : int)
+
+[Getters/Setters]
+GetTop()
+SetTop(top : int)
+GetBottom()
+SetBottom(bottom : int)
+
+[Other Methods]
+GetFractionString() : string 
+GetDecimalValue() : double 
