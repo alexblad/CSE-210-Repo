@@ -18,7 +18,7 @@ public class Word
     //Getters 
     public string GetDisplayText() //Returns text to be displayed
     {
-        if (_isHidden == true)
+        if (_isHidden) //Default in C# is to check for condition to be true so I do not specify _isHidden == true
         {
             foreach(char letter in _text)
             {
@@ -32,6 +32,7 @@ public class Word
         }
     }
 
+    //Other Methods
     public bool isHidden()
     {
         return _isHidden; //Returns bool true/fales for _isHidden
@@ -45,5 +46,6 @@ public class Word
     public void Show()
     {
         _isHidden = false;
+        _hiddenText = ""; //Reset hidden text
     }
 }

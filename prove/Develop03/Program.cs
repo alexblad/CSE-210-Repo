@@ -13,5 +13,12 @@ class Program
 
         w1.Show();
         Console.WriteLine(w1.GetDisplayText());
+
+
+        Reference v1 = new Reference("Nephi", 1, 5);
+        Reference v2 = new Reference("James", 1, 6, 9);
+
+        Console.WriteLine(v1.GetDisplayText());
+        Console.WriteLine(v2.GetDisplayText());
     }
 }
