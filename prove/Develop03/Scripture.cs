@@ -5,6 +5,7 @@ public class Scripture
 //Attributes
     private Reference _reference; 
     private List<Word> _words;
+    private bool _allHidden; 
 
 //Methods
     //Constructors
@@ -12,6 +13,7 @@ public class Scripture
     {
         _reference = reference;
         _words = CreateWordList(words);
+        _allHidden = false;
 
 
     }
@@ -44,7 +46,7 @@ public class Scripture
         while (indicesToHide.Count < numberToHide)
         {
             int indexOfHidden = random.Next(_words.Count);
-            if (!indicesToHide.Contains(indexOfHidden))
+            if (!_words[indexOfHidden].isHidden() && !indicesToHide.Contains(indexOfHidden))
             {
                 indicesToHide.Add(indexOfHidden);
             }
@@ -68,5 +70,23 @@ public class Scripture
         return ($"{_reference.GetDisplayText()} {sb.ToString()}");
 
     }
+
+    public bool AreAllHidden()
+    {
+        foreach(var word in _words)
+        {
+            if (!word.isHidden())
+            {
+                return false;
+            }
+        }
+        return _allHidden = true;
+    }
+
+    public bool IsHidden()
+    {
+        return _allHidden;
+    }
+
     
 }

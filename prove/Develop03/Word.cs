@@ -22,7 +22,7 @@ public class Word
         {
             foreach(char letter in _text)
             {
-                _hiddenText += "_";
+                return new string('_', _text.Length);
             }
             return _hiddenText;
         }

@@ -43,20 +43,40 @@ class Program
             {
                 newRef = new Reference(book, chapt, verse1, verse2);
             }
+
             Console.WriteLine("What does the scripture say?");
             string words = Console.ReadLine();
+            //Instantiate Scripture
             Scripture toMemorize = new Scripture(newRef, words);
 
-            Console.WriteLine(toMemorize.GetDisplayText());
-
+            string repeat = " ";
             Random random = new Random();
-            int randomToHide = random.Next(1,3);
-            toMemorize.HideWords(randomToHide);
 
-            Console.WriteLine(toMemorize.GetDisplayText());
+            while (repeat.ToLower() != "quit")
+            {
+                Console.Clear();
+
+                int randomToHide = random.Next(1,3);
+                toMemorize.HideWords(randomToHide);
+
+                Console.WriteLine(toMemorize.GetDisplayText());
+                Console.WriteLine("Press enter to continue, or type quit to end the program.");
+
+                // Prompt user for input and update repeat variable
+                repeat = Console.ReadLine();
+
+                //Exits the loop if all words are hidden
+                 bool hidden = toMemorize.AreAllHidden();
+                if (hidden)
+                {
+                    repeat = "quit";
+                }
+
+            }
+
+            Console.WriteLine("Would you like to try a new verse?");
+            newverse = Console.ReadLine();
         }
-        Console.WriteLine("Would you like to try a new verse?");
-        newverse = Console.ReadLine();
 
     }
 }
