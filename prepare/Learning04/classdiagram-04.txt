@@ -1,0 +1,22 @@
+Class: Assignment (Parent)
+Attributes:
+* _studentName : string 
+* _topic : string 
+
+Methods: 
+GetSummar() : string 
+
+Class: MathAssignment (Child) 
+Attributes:
+* _textbookSection : string 
+* _problem : string 
+
+Methods: 
+GetHomeworkList() : string 
+
+Class: WritingAssignment (Child)
+Attributes:
+* _title : string 
+
+Methods: 
+GetWritingInformation() : string 
