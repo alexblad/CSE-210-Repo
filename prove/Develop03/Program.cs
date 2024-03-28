@@ -1,5 +1,8 @@
 using System;
 
+//Exceeding Program Requirements
+/*I exceeded the program requirements by adding the capability to choose another verse to memorize 
+before the program completely ends*/
 class Program
 {
     static void Main(string[] args)
