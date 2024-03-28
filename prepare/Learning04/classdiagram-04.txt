@@ -3,8 +3,8 @@ Attributes:
 * _studentName : string 
 * _topic : string 
 
-Methods: 
-GetSummar() : string 
+Methods:
+GetSummary() : string 
 
 Class: MathAssignment (Child) 
 Attributes:
