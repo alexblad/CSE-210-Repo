@@ -12,7 +12,7 @@ class Program
             System.Console.WriteLine("1) Breathing Activity");
             System.Console.WriteLine("2) Listing Activity");
             System.Console.WriteLine("3) Reflection Activity");
-            System.Console.WriteLine("5) Quit");
+            System.Console.WriteLine("4) Quit");
             input = int.Parse(Console.ReadLine());
             Console.Clear();
             switch (input)
