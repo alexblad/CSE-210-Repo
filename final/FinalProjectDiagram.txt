@@ -160,5 +160,5 @@ Class: SwimmingActivity (Child)
     GetDistance() : float 
     GetSpeed() : float 
     GetPace() : float
-    ---------------------------------------------------------
+---------------------------------------------------------
     
