@@ -1,0 +1,164 @@
+These are the class diagrams for the Foundation 4 final project. 
+---------------------------------------------------------
+###Foundation 1###
+Class: Comment
+    Attributes:
+    _content : string 
+    _person : person
+
+    Methods: 
+    Display() : void 
+
+Class: Video
+    Attributes: 
+    _title : string 
+    _author : string 
+    _length : int
+    _comments : List<Comment> 
+
+    Methods: 
+    GetNumofComments() : int 
+    Display() : void 
+---------------------------------------------------------
+###Foundation 2###
+Class: Address
+    Attributes: 
+    _streetAddress : string 
+    _city : string
+    _state : string 
+    _country : string 
+
+    Methods: 
+    isUSA() : bool 
+    FullAddress() : string 
+
+Class: Customer
+    Attributes:
+    _name : string 
+    _addresss : Address
+
+    Methods: 
+    InUSA() : bool 
+    MakeShipLabel() : string 
+
+Class: Order 
+    Attributes: 
+    _products : List<Product>
+    _customer : Costumer
+
+    Methods: 
+    CalTotalPrice() : float 
+    MakePackLabel() : string 
+    DisplayPackLabel() : void 
+    MakeShipLabel() : string 
+
+Class: Product
+    Attributes:
+    _name : string 
+    _productID : int 
+    _price : float 
+    _quantity : int 
+
+    Methods: 
+    CalcCost() : float 
+    MakePackLabel : String 
+---------------------------------------------------------
+###Foundation 3###
+Class: Address
+    Attributes: 
+    _streetAddress : string 
+    _city : string 
+    _state : string 
+    _country : string 
+
+    Methods: 
+    FullAddress() : string 
+
+Class: Event (Parent)
+    Attributes: 
+    _address : Address
+    _type : string 
+    _title : string 
+    _date : string 
+    _time : string 
+    
+    Methods: 
+    GetTitle() : string 
+    GetDate() : string 
+    GetTime() : string 
+    GetDescription() : string 
+    GetAddress() : Addresss 
+    StandardMessage() : void 
+    ShortMessage() : void 
+
+Class: LectureEvent (Child)
+    Attributes: 
+    Get from parent
+    _speaker : string 
+    _capacity : int 
+
+    Methods: 
+    FullMessage() : void 
+
+Class: OutdoorEvent (Child)
+    Attributes: 
+    Get from parent 
+    _weatherForecast : string 
+
+    Methods: 
+    FullMessage() : void 
+
+
+Class: Reception Event (Child)
+    Attributes: 
+    Get from parent 
+    _RSVPemail : string 
+
+    Methods: 
+    FullMessage() : void
+---------------------------------------------------------
+###Foundation 4###
+Class: Activity (Parent)
+    Attributes: 
+    _date : string 
+    _length : int 
+    _type : string 
+
+    Methods: 
+    GetSummary() : String 
+    GetLength() : int 
+    GetDistance() : float 
+    GetSpeed() : float
+    GetPace() : float 
+
+Class: CyclingActivity (Child)
+    Attributes: 
+    Get from parent
+    _speed : float
+
+    Methods: 
+    GetSpeed() : float 
+    GetDistance() : float 
+    GetPace() : float
+
+Class: RunningActivity (Child)
+    Attributes: 
+    Get from parent
+    _distance : float 
+
+    Methods: 
+    GetDistance() : float 
+    GetSpeed() : float 
+    GetPace() : float 
+
+Class: SwimmingActivity (Child)
+    Attributes: 
+    Get from parent 
+    _numberOfLaps() : int 
+
+    Methods: 
+    GetDistance() : float 
+    GetSpeed() : float 
+    GetPace() : float
+    ---------------------------------------------------------
+    
